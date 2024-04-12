@@ -36,4 +36,13 @@ return {
 		end
 		return keys
 	end,
+
+	config = function()
+		local harpoon = require("harpoon")
+		harpoon:setup({
+			settings = {
+				save_on_toggle = true,
+			},
+		})
+	end,
 }
